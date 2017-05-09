@@ -3,6 +3,9 @@ var score=0;
 var hasConflicted=new Array();
 
 $(document).ready(function(){
+	$(document).on('touchmove',function(event){
+		event.preventDefault();
+	});
 	prepareForMobile();
 	newgame();
 	$('#newgamebutton').click(function(){
